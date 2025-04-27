@@ -1,0 +1,27 @@
+# Ignorar archivos y carpetas de PyCharm
+.idea/
+
+# Ignorar archivos y carpetas de VSCode
+.vscode/
+
+# Ignorar archivos de Python compilados
+__pycache__/
+*.pyc
+
+# Ignorar entornos virtuales (si usas uno)
+env/
+venv/
+
+# Ignorar archivos de configuración de test
+.coverage
+*.coveragerc
+nosetests.xml
+test_*.xml
+
+# Ignorar archivos de log
+*.log
+
+# Ignorar archivos temporales
+*.swp
+*.bak
+*.tmp
