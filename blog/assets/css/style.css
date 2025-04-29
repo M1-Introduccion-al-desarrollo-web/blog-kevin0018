@@ -5,6 +5,8 @@
     font-family: 'Arial', sans-serif;
 }
 
+/* Header css */
+
 .header-link {
     text-decoration: none;
     color: white;
@@ -54,25 +56,67 @@ a {
     height: 20px;
 }
 
-main {
+/* Main css */
 
+body {
     background-color: #ff3333;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
     color: white;
     padding: 60px;
     line-height: 1.8;
+    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: justify;
 }
 
-.img-main {
-    width: 400px;
-    height: 200px;
-    padding-right: 40px;
+.images-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
 
-.img-coche {
-    width: 340px;
-    height: 200px;
-    padding-right: 40px;
+.images-container img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+figcaption {
+    font-size: 0.8rem;
+    color: #000000;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.contact-button {
+    display: inline-block;
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #b30000;
+}
+
+
+/* Footer css */
 
 footer {
     background-color: yellow;
@@ -82,4 +126,242 @@ footer {
 
 footer p {
     font-size: 1rem;
+}
+
+
+/* Cars css */
+
+.list-cars {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.car-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.car-image {
+    flex-shrink: 0;
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.car-details {
+    flex: 2;
+}
+
+.car-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 0 5px;
+}
+
+.car-category {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.car-specifications {
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.car-more {
+    color: green;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.car-price {
+    text-align: right;
+}
+
+.price-per-day {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ff3333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.price-total {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.select-button {
+    background-color: #ffd700;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.select-button:hover {
+    background-color: #ffc107;
+}
+
+/* Lugares css */
+
+.list-lugares {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lugar-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.lugar-image {
+    flex-shrink: 0;
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.lugar-details {
+    flex-grow: 1;
+}
+
+.lugar-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.lugar-details p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+}
+
+/* Hoteles css */
+
+.list-hotels {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hotel-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hotel-image {
+    flex-shrink: 0;
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.hotel-details {
+    flex: 2;
+}
+
+.hotel-details h3 {
+    font-size: 1.2rem;
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.hotel-details p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 5px 0;
+}
+
+.hotel-price {
+    text-align: right;
+    flex-shrink: 0;
+}
+
+.hotel-price span {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ff3333;
+}
+
+/* Vuelos css */
+
+.list-vuelos {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.vuelo-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.vuelo-item img {
+    flex-shrink: 0;
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.vuelo-details {
+    flex: 1;
+}
+
+.vuelo-details h3 {
+    font-size: 1.2rem;
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.vuelo-details p {
+    font-size: 1rem;
+    color: #666;
+    margin: 5px 0;
 }
